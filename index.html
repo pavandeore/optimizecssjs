@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some test</title>
+    <link rel="stylesheet" href="./lib/bt4.css" />
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/bt4.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center text-dark">Some optimization test</h2>
+      <p><a href="./about.html">about page</a></p>
+      <p class="text-success">
+        This is some paragraph This is some paragraph This is some paragraph
+        This is some paragraph
+      </p>
+    </div>
+    <div class="container m-4 p-2">
+      <div class="alert alert-success text-center">
+        This is some text center alert
+      </div>
+    </div>
+    <div class="container-fluid text">
+      This is some paragraph This is some paragraph This is some paragraph This
+      is some paragraph This is some paragraph This is some paragraph This is
+      some paragraph This is some paragraph
+    </div>
+    <button class="btn btn-success hide-btn">click to hide</button>
+    <button class="btn btn-danger show-btn">click to show</button>
+
+    <script>
+      $(document).ready(function () {
+        $(".hide-btn").click(function () {
+          $(".text").hide();
+        });
+        $(".show-btn").click(function () {
+          $(".text").show();
+        });
+      });
+    </script>
+  </body>
+</html>
